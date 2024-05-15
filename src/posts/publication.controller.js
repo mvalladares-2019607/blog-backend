@@ -38,39 +38,3 @@ export const postsPost = async (req, res) => {
 
 }
 
-export const getPublicationById = async (req, res) => {
-
-    const { id } = req.params;
-    const publication = await Publication.findOne({ _id: id });
-
-    res.status(200).json({
-        publication
-    })
-}
-
-export const postsPut = async (req, res) => {
-
-    const { id } = req.params;
-    const { _id, state, ...resto } = req.body;
-
-    await Publication.findByIdAndUpdate(id, resto);
-    const publication = await Publication.findOne({ _id: id });
-
-    res.status(200).json({
-        msg: 'Publication successfully updated',
-        publication
-    });
-}
-
-export const postsDelete = async (req, res) => {
-
-    const { id } = req.params;
-
-    await Publication.findByIdAndUpdate(id, { state: false });
-    const publication = await Publication.findOne({ _id: id });
-
-    res.status(200).json({
-        msg: 'Publication successfully delete',
-        publication
-    });
-}
