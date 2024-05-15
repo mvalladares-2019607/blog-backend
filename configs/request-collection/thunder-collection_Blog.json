@@ -1,0 +1,78 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Blog",
+    "collectionId": "65334632-1f17-49d5-9fc7-01e817198d33",
+    "dateExported": "2024-05-12T04:14:40.215Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "0cff3328-4f60-4188-bd8c-e399a2f47ae9",
+            "name": "posts",
+            "containerId": "",
+            "created": "2024-05-12T03:26:48.456Z",
+            "sortNum": 10000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "0fa9b997-af13-46ae-b3ff-5c8be7fe921a",
+            "colId": "65334632-1f17-49d5-9fc7-01e817198d33",
+            "containerId": "0cff3328-4f60-4188-bd8c-e399a2f47ae9",
+            "name": "NewPost",
+            "url": "http://localhost:3000/blog/v1/posts/create",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-05-12T03:28:58.858Z",
+            "modified": "2024-05-12T03:36:23.665Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Proyecto 1\",\n  \"img\": \"https://www.pixartprinting.it/blog/wp-content/uploads/2022/11/IMMAGINE-1.jpg\",\n  \"description\": \"Se hizo un proyecto\",\n  \"author\": \"Elmer Santos\",\n  \"url\": \"github.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "cbf463f0-a8c9-4b98-a5b9-2c327d54492a",
+            "colId": "65334632-1f17-49d5-9fc7-01e817198d33",
+            "containerId": "0cff3328-4f60-4188-bd8c-e399a2f47ae9",
+            "name": "viewPosts",
+            "url": "http://localhost:3000/blog/v1/posts",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-05-12T03:39:01.674Z",
+            "modified": "2024-05-12T03:43:04.085Z",
+            "headers": []
+        },
+        {
+            "_id": "f7e38821-5d16-4821-9ae7-79c94251e283",
+            "colId": "65334632-1f17-49d5-9fc7-01e817198d33",
+            "containerId": "0cff3328-4f60-4188-bd8c-e399a2f47ae9",
+            "name": "editPost",
+            "url": "http://localhost:3000/blog/v1/posts/edit/664039c1252d68aac0987e8f",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-05-12T03:39:56.982Z",
+            "modified": "2024-05-12T03:42:53.391Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Modificado\",\n  \"img\": \"none\",\n  \"description\": \"modificado\",\n  \"url\": \"github\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "51b36535-f20a-4bcf-ae12-f3b9647578c6",
+            "colId": "65334632-1f17-49d5-9fc7-01e817198d33",
+            "containerId": "0cff3328-4f60-4188-bd8c-e399a2f47ae9",
+            "name": "deletePost",
+            "url": "http://localhost:3000/blog/v1/posts/delete/664039c1252d68aac0987e8f",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-05-12T03:42:04.327Z",
+            "modified": "2024-05-12T03:42:13.017Z",
+            "headers": []
+        }
+
+    ],
+    "ref": "0N6eHEMr-jCbr6sGwgiTr1QH-mYx0Z2qLEHrVfGwoj9cmFI_no0wNZ9A7J5TBkUTeWnbG2I18F69g6EFdjdQnQ"
+}
